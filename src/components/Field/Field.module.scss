@@ -1,0 +1,35 @@
+@use "/src/style/colors";
+
+.container {
+    align-items: center;
+    background-color: colors.$gray;
+    border-color: colors.$borderHighlight colors.$borderShadow colors.$borderShadow colors.$borderHighlight;
+    border-style: solid;
+    border-width: 4px;
+    box-sizing: border-box;
+    color: #000;
+    display: flex;
+    flex-shrink: 0;
+    font-family: monospace;
+    font-size: 26px;
+    font-weight: bold;
+    height: 32px;
+    justify-content: center;
+    padding: 0;
+    position: relative;
+    user-select: none;
+    vertical-align: middle;
+    width: 32px;
+
+    &.inset {
+        border-color: colors.$borderShadow colors.$borderHighlight colors.$borderHighlight colors.$borderShadow;
+    }
+}
+
+.flat {
+    border: 1px solid #909090;
+}
+
+.sprite {
+    pointer-events: none; // TODO long press works wrong without it (there's no onFinish when performed on a question mark) - should not be necessary
+}

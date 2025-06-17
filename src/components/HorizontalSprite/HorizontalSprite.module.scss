@@ -1,0 +1,6 @@
+.container {
+    height: calc(1px * var(--height) * var(--scale));
+    object-fit: cover;
+    object-position: calc(100% * var(--index) / (var(--count) - 1)) top;
+    width: calc(1px * var(--width) * var(--scale));
+}

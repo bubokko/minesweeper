@@ -1,0 +1,59 @@
+@use "/src/style/colors";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+.body {
+    background-color: #0a47da;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 2px;
+}
+
+.content {
+    background-color: #e0dfe3;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.topBar {
+    align-items: center;
+    background-image: linear-gradient(#3495ff, #0a47da);
+    border-radius: 10px 10px 0 0;
+    color: #fff;
+    display: flex;
+    font-family: "SegoeUI", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    gap: 8px;
+    padding: 8px;
+    text-shadow: 1px 1px #000;
+}
+
+.disabled {
+    pointer-events: none;
+
+    .body {
+        background-color: #758cdd;
+    }
+
+    .topBar {
+        background-image: linear-gradient(#9db9eb, #7a93df);
+        color: #d8e4f8;
+    }
+}
+
+.icon {
+    height: 20px;
+    left: 0;
+    object-fit: scale-down;
+    object-position: center center;
+    position: relative;
+    top: 1px;
+    width: 20px;
+}

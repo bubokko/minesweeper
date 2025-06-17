@@ -1,0 +1,39 @@
+@use "sass:color";
+
+@font-face {
+    font-display: block;
+    font-family: "DigitalNumbers";
+    src: url("/fonts/DigitalNumbers400-numeric.ttf") format("truetype");
+}
+
+.container {
+    align-items: center;
+    background-color: #000;
+    color: #fd0101;
+    display: flex;
+    font-family: "DigitalNumbers", monospace;
+    justify-content: center;
+    overflow: hidden;
+    padding: .1em .25em;
+}
+
+.screen {
+    position: relative;
+}
+
+.off {
+    opacity: .25;
+}
+
+.on {
+    position: absolute;
+    top: 0;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}

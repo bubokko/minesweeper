@@ -1,0 +1,39 @@
+@font-face {
+    font-display: block;
+    font-family: "DigitalScreen";
+    src: url("/fonts/DigitalScreen-numeric.ttf") format("truetype");
+}
+
+@font-face {
+    font-display: block;
+    font-family: "SegoeUI";
+    src: url("/fonts/SegoeUI.ttf") format("truetype");
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("/images/wallpaper.jpg") no-repeat center center;
+    background-color: #000;
+    background-size: cover;
+    color: #fff;
+    cursor: default;
+    overflow: hidden;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: none;
+    user-select: none; // Without it, pointerMove event only works for a very short amount of time (< 1s)
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    overflow: hidden;
+    -webkit-touch-callout: none;
+}

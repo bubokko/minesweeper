@@ -1,0 +1,17 @@
+@use "/src/style/colors";
+
+.container {
+    background-color: colors.$gray;
+    border-color: colors.$borderHighlight colors.$borderShadow colors.$borderShadow colors.$borderHighlight;
+    border-style: solid;
+    border-width: 6px;
+    box-sizing: border-box;
+    font-size: 32px;
+    height: 52px;
+    padding: 0;
+    width: 52px;
+
+    &:enabled:active {
+        border-color: colors.$borderShadow colors.$borderHighlight colors.$borderHighlight colors.$borderShadow;
+    }
+}

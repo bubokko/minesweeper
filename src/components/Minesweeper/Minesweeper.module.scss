@@ -1,0 +1,69 @@
+@use "/src/style/colors";
+
+.window {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.noColor {
+    filter: grayscale(100%);
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.game {
+    background-color: colors.$gray;
+    border-color: colors.$borderHighlight colors.$borderShadow colors.$borderShadow colors.$borderHighlight;
+    border-style: solid;
+    border-width: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    overflow: hidden;
+    padding: 12px;
+}
+
+.info {
+    align-items: center;
+    align-self: stretch;
+    border-color: colors.$borderShadow colors.$borderHighlight colors.$borderHighlight colors.$borderShadow;
+    border-style: solid;
+    border-width: 4px;
+    display: flex;
+    flex-shrink: 0;
+    gap: 5px;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 8px 10px;
+
+    & > * {
+        flex-shrink: 0;
+    }
+}
+
+.hiddenMenu {
+    visibility: hidden;
+}
+
+.digitalScreen {
+    border-color: colors.$borderShadow colors.$borderHighlight colors.$borderHighlight colors.$borderShadow;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.fields {
+    border-color: colors.$borderShadow colors.$borderHighlight colors.$borderHighlight colors.$borderShadow;
+    border-style: solid;
+    border-width: 6px;
+    overflow: auto;
+}
+
+.bestTimeModal {
+    pointer-events: all; // To work despite parent window being disabled
+}
